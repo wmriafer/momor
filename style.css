@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0f0f, #004d00);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px; /* Aumenta um pouco o tamanho */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+button {
+    background: #008f00;
+    border: none;
+    padding: 12px 25px; /* Maior botão */
+    font-size: 1.3em;
+    color: white;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #00c700;
+}
+
+button:first-of-type {
+    margin-top: 40px; /* Adiciona espaço extra para o primeiro botão */
+}
+
+.extra-surprises {
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo mais suave */
+    border-radius: 10px;
+}
+
+.music-separator {
+    margin: 20px 0;
+    height: 1px;
+    background: #fff; /* Linha de separação */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 2em;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: glow 1.5s infinite alternate;
+}

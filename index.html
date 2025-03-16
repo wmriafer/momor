@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oi, meu amor! 💖</h1>
+       
+        <button onclick="showMessage()">Clique aqui!</button>
+        <p class="hidden-message" id="message">Você é a melhor coisa que já aconteceu na minha vida! Te amo! ❤️</p>
+
+        <div class="extra-surprises">
+            <button onclick="showHearts()">Clique para ver o amor!</button>
+            <div id="heart-container"></div>
+            <audio id="romantic-music" controls>
+                <source src="musica.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+            <div class="music-separator"></div> <!-- Separador entre as músicas -->
+            <audio id="romantic-music1" controls>
+                <source src="musica1.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+        
+
+
+        <p class="hidden-message" id="second-message">Você é incrível! </p>
+        <button onclick="showSecondMessage()">Clique aqui para mais uma surpresa!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
